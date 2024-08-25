@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
+}
+body > header {
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header li {
+    display: inline;
+    font-size: arial, helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-right: 48px;
+}
+header li a {
+    color: #f5f6fa;
+    text-decoration: none;
+}
+/* resolução */
+.container {
+    width: 100%; /* Ajusta a largura para 100% */
+    max-width: 1366px; /* Define um limite máximo de largura */
+    margin: 0 auto;
+}
+/* alinhamentos dos artigos */
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.articles article img {
+    width: 100%; /* Ajusta a largura para 100% do container */
+    height: 250px; /* Define uma altura fixa */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+    padding: 3px; /* Reduzindo o espaçamento interno */
+}
+/* garantir que os containers não permitam overflow */
+.articles {
+    overflow: hidden;
+}
+.articles article {
+    width: calc(33.333% - 18px); /* Reduzindo a largura para diminuir o espaço */
+    margin-bottom: 18px; /* Reduzindo a margem inferior */
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    padding: 8px; /* Reduzindo o padding */
+}
+section {
+    padding: 16px 0;
+}
+section h2 {
+    margin-bottom: 16px;
+}
+.articles article a {
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.articles article a:hover {
+    text-decoration: underline;
+}
+.articles article p,
+.articles article a {
+    font-family: arial, helvetica, sans-serif;
+}
+.articles article h3 {
+    font-size: 24px;
+}
+section h2 {
+    font-size: 32px;
+}
+#sports {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+#sports .articles article a {
+    background-color: #009432;
+}
+#economy {
+    background-color: #fffa65;
+}
+#economy .articles article a {
+    background-color: #ff9f1a;
+}
+#entretainment {
+    background-color: rgba(210, 105, 30, 0.5);
+}
+#entretainment .articles article a {
+    background-color: orangered;
+}
+#technology {
+    background-color: rgba(118, 252, 252, 0.788);
+}
+#technology .articles article a {
+    background-color: rgba(207, 24, 24, 0.705);
+}
+
+
